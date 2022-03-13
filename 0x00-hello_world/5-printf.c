@@ -2,7 +2,7 @@
 /**
  *main - entry point
  *My hello, printf task
-*Return: return 0 after finesh 
+ *Return: return 1 after program execution 
  */
 int main(void)
 {
