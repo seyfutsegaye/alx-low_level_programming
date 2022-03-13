@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point
+ *main - entry point
  *my heloo, printf task
  *return: return 1 after program execuition 
  */
