@@ -24,6 +24,5 @@ int main(void)
 	{
 	printf("%d is postive \n ", n);
 	}
-  
 return (0);
 }
