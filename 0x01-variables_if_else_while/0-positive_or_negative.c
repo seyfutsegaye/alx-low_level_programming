@@ -4,7 +4,7 @@
 /**
   * main - Entry point
   *
-  * Return: Alwayes 0 (Sucess/correct)
+  * Return: Alwayes 0 (Success/correct)
   */
 int main(void)
 {
@@ -14,15 +14,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n < 0)
 	{
-		printf("%i is negative  \n ", n);
+		printf("%d is negative  \n ", n);
 	}
 	else if (n == 0)
 	{
-		printf("%i is zero \n " n);
+		printf("%d is zero \n " n);
 	}
 	else
 	{
-	printf("%i is postive \n ", n);
+	printf("%d is postive \n ", n);
 	}
 }
 return (0);
