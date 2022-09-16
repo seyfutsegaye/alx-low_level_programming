@@ -12,5 +12,5 @@ while (n-- > 0)
 {
 putchar('_');
 }
-puchar('\n');
+putchar('\n');
 }
