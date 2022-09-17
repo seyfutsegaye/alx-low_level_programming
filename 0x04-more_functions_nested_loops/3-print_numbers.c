@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- * print_numbers - function to display numers from 0 to 9
+ * print_numbers - function to display numbers
  * 0 to 9
  *
- * Returns: return nothing
+ * Return: return nothing
  */
 void print_numbers(void)
 {
