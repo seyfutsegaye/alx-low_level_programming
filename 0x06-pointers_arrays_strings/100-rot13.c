@@ -1,20 +1,28 @@
 #include "main.h"
 
 /**
- * rot13 - function that ecode
- * @str: function to be encoded
+ * rot13 - encodes a string into rot13
+ * @s: string to encode
  *
- *Return: adress of string
+ * Return: address of s
  */
 
-char *rot13(char *str)
+char *rot13(char *s)
 {
-int i = 0;
+int i, j;
 
-while (str[i] != '\0')
+char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char b[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+for (i = 0; *(s + i); i++)
 {
-str[i] = transform_2(str[i]);
-i++;
+for (j = 0; j < 52; j++)
+{
+if (a[j] == *(s + i))
+{
+*(s + i) = b[j];
+break;
 }
-return (str);
+}
+}
+return (s);
 }
