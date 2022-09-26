@@ -22,5 +22,5 @@ break;
 if (*(accept + i) == '\0')
 break;
 }
-return (1);
+return (j);
 }
