@@ -12,14 +12,13 @@ if (*s == '\0')
 return (0);
 return (1 + _length(s + 1));
 }
- /**
-  * checkp - cheak if a string is palindrome
-  * @i: is the index
-  * @lg: the length of thr string
-  * @s: is the string
-  * Return: 1 if it is palindrome 0 if not
-  */
-
+/**
+ * checkp - the string
+ * @i: is the index
+ * @lg: the length of thr string
+ * @s: is the string
+ * Return: 1 if is palindrome or 0 if not
+ */
 int checkp(int i, int lg, char *s)
 {
 if (lg > 0)
