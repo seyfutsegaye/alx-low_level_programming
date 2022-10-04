@@ -11,15 +11,15 @@ int i = 0, j = 0, l = 0, k = 0;
 char *s;
 
 if (s1 == NULL)
-s1 = " ";
+s1 = "";
 if (s2 == NULL)
-s2 = " ";
+s2 = "";
 while (s1[i])
 i++;
 while (s2[j])
 j++;
 l = i + j;
-s = (char *)malloc(l * sizeof(char) + 1);
+s = (char *)malloc(l *sizeof(char) + 1);
 if (s == NULL)
 return (NULL);
 j = 0;
