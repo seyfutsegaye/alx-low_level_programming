@@ -27,43 +27,40 @@ printf("%c", letter);
  */
 void print_int(va_list arg)
 {
-	int num;
+int num;
 
-	num = va_arg(arg, int);
-	printf("%d", num);
+num = va_arg(arg, int);
+printf("%d", num);
 }
 
 /**
  * print_float - Prints a float.
  * @arg: A list of arguments pointing to
- *       the float to be printed.
+ * the float to be printed.
  */
 void print_float(va_list arg)
 {
-	float num;
+float num;
 
-	num = va_arg(arg, double);
-	printf("%f", num);
+num = va_arg(arg, double);
+printf("%f", num);
 }
 
 /**
  * print_string - Prints a string.
  * @arg: A list of arguments pointing to
- *       the string to be printed.
+ * the string to be printed.
  */
 void print_string(va_list arg)
 {
-	char *str;
-
-	str = va_arg(arg, char *);
-
-	if (str == NULL)
-	{
-		printf("(nil)");
-		return;
-	}
-
-	printf("%s", str);
+char *str;
+str = va_arg(arg, char *);
+if (str == NULL)
+{
+printf("(nil)");
+return;
+}
+printf("%s", str);
 }
 
 /**
@@ -72,11 +69,12 @@ void print_string(va_list arg)
  * @...: A variable number of arguments to be printed.
  *
  * Description: Any argument not of type char, int, float,
- *              or char * is ignored.
- *              If a string argument is NULL, (nil) is printed instead.
+ * or char * is ignored.
+ * If a string argument is NULL, (nil) is printed instead.
  */
 void print_all(const char * const format, ...)
 {
+<<<<<<< HEAD
 	va_list args;
 	int i = 0, j = 0;
 	char *separator = "";
@@ -109,5 +107,4 @@ i++;
 
 	va_end(args);
 i}
-
 
