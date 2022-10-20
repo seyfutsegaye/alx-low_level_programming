@@ -15,10 +15,9 @@ void print_all(const char * const format, ...);
  */
 void print_char(va_list arg)
 {
-	char letter;
-
-	letter = va_arg(arg, int);
-	printf("%c", letter);
+char letter;
+letter = va_arg(arg, int);
+printf("%c", letter);
 }
 
 /**
@@ -97,17 +96,18 @@ void print_all(const char * const format, ...)
 		while (j < 4 && (*(format + i) != *(funcs[j].symbol)))
 			j++;
 
-		if (j < 4)
-		{
-			printf("%s", separator);
-			funcs[j].print(args);
-			separator = ", ";
-		}
-
-		i++;
-	}
+if (j < 4)
+{
+printf("%s", separator);
+funcs[j].print(args);
+separator = ", ";
+}
+i++;
+}
 
 	printf("\n");
 
 	va_end(args);
-}
+i}
+
+
